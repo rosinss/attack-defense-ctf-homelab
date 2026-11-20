@@ -32,13 +32,19 @@ Initially developed to prepare for the iHack CTF 2026 Attack & Defense Final Rou
 
 ```mermaid
 graph TD
-    A[Kali Linux] --> B[Docker Environment]
-    B --> C[Defender Lab]
-    B --> D[Offensive Lab]
-    B --> E[Black-box Lab]
-    B --> F[Path Traversal Lab]
-    B --> G[SQL Injection Lab]
-    C --> H[Emergency Recovery Drill]
+    A["Kali Linux"] --> B["Docker"]
+    B --> C["Defender Lab"]
+    B --> D["Offensive Lab"]
+    B --> E["Black-box Lab"]
+    B --> F["Path Traversal"]
+    B --> G["SQL Injection"]
+    C --> H["Recovery Drill"]
+
+    classDef main fill:#583A91,stroke:#A78BFA,color:#FFFFFF
+    classDef lab fill:#292139,stroke:#8B5CF6,color:#FFFFFF
+
+    class A,B main
+    class C,D,E,F,G,H lab
 ```
 
 The architecture represents the logical organisation of the home lab.
